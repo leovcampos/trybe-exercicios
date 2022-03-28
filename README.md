@@ -1,0 +1,1 @@
+Este repositório foi criado para armazenar todos os exercicios que serão feitos durante o curso de desenvolvedor full stack que comecei a fazer na escola de programação Trybe. Lá irei aprender front e back end, além de iniciar estudos dência da computação. Os conteúdos principais são HTML, CSS, Java Script e Phyton. 
