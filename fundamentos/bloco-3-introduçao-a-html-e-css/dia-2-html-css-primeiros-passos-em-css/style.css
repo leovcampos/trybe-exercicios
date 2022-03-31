@@ -1,0 +1,46 @@
+charset="UTF-8"
+
+body{
+    font-size: 16px;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 65px;
+    color: orangered;
+}
+
+p{
+    font-weight: 600;
+    font-size: 3em;
+    font-style: italic;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: dotted;
+}
+
+ul{
+    background-color: burlywood;
+    font-style: oblique;
+    text-align: justify;
+    text-decoration: dashed;
+}
+
+.back{
+    background-color: burlywood;
+}
+
+#yellow{
+    background-color: yellow;
+    line-height: 40px;
+}
+
+#red{
+    background-color: red;
+    line-height: 40px;
+}
+
+#brown{
+    background-color: rgb(92, 45, 45);
+    line-height: 40px;
+}
