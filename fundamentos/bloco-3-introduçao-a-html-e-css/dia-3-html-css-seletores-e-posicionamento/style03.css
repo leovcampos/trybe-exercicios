@@ -1,0 +1,15 @@
+p, h1{
+    text-align: center;
+}
+
+ol li:hover{
+    background-color: brown;
+}
+
+ol li:active{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ol, ul{
+    list-style: none;
+}
