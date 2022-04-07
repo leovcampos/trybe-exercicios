@@ -71,16 +71,22 @@ if(ladoA + ladoB + ladoC === 180){
 // .Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case) .
 // .Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 // .Exemplo: bisconst peça2 = peça.toLowerCase();
-hop (bispo) -> diagonals (diagonais)
+// hop (bispo) -> diagonals (diagonais)
 
-const peça = "Torre";
-const valorImposto = 0.2;
-        break
+const peça = "Cavalo";
+
+switch (peça.toLowerCase()){
+    case "bispo":
+        console.log("diagonais");
+        break;
+    case "cavalo":
+        console.log("movimento em L");
+        break;
     case "torre":
         console.log("horizontais e verticais");
         break;
     default:
-        console.log("peça não identificada")
+        console.log("Peça inexistente")
 }
 
 // 7.Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
@@ -181,3 +187,13 @@ if(valorDeVenda > 0 || custoProduto > 0){
 // Resultado: R$ 2.612,55.
 // Dica: que tal identificar as alíquotas com variáveis de nomes explicativos? 
 
+const salarioBruto;
+const valorDescontoINSS;
+const valorDescontoIR;
+const salarioBase;
+const salarioLiquido;
+
+switch(salarioLiquido){
+    case (salarioBruto <= 1.556,94):
+        console.log(valorDescontoINSS)
+}
