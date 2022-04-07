@@ -180,24 +180,44 @@ if(valorDeVenda > 0 || custoProduto > 0){
 // Para descobrir o salário-base, subtraia do salário bruto a alíquota do INSS: R$ 3.000,00 - R$ 330,00 = R$ 2.670,00.
 // Para pegar o valor do IR, temos um salário (já deduzido o INSS) entre R$ 1.903,99 e 2.826,65, sendo a alíquota, então, de 7.5%, com parcela de R$ 142,80 a deduzir do imposto. Assim, temos:
 // R$ 2.670,00: salário com INSS já deduzido;
-// 7.5%: alíquota de imposto de renda;
-// R$ 142,80 parcela a se deduzir do imposto.
-// Fazendo a conta, temos: (7,5% de R$ 2.670,00) - R$ 142,80 = R$ 57,45
-// O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2.612,55.
+// 7.5%: alíquota de imposto de renda;salarioBase = salarioBruto - (salarioBruto * 0.09)670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2.612,55.
 // Resultado: R$ 2.612,55.
 // Dica: que tal identificar as alíquotas com variáveis de nomes explicativos?
 
-const salarioBruto = 4.000;
-let salarioBase = "";
+const salarioBruto = 1000;
+let salarioBase;
+let salarioLiquido;
 
-if (salarioBruto <= 1.556,94){
-    console.log(salarioBase + (salarioBruto * 0,08))
-}else if (salarioBruto > 1.556,94 && salarioBruto <= 2.594,92){
-    console.log(salarioBase + (salarioBruto * 0,09))
-}else if (salarioBruto > 2.594,92 && salarioBruto <= 5.189,82){
-    console.log(salarioBase + (salarioBruto * 0,11))
-}else if (salarioBruto > 5.189,82){
-    console.log(salarioBase + (salarioBruto - 570,88))
-}else{
+
+if (salarioBruto <= 1556.94 && salarioBruto > 0){
+    salarioBase = salarioBruto  - (salarioBruto * 0.08)
+    console.log(salarioBase)
+} else if (salarioBruto > 1556.94 && salarioBruto <= 2594.92){
+    salarioBase = salarioBruto - (salarioBruto * 0.09)
+    console.log(salarioBase)
+} else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82){
+    salarioBase = salarioBruto - (salarioBruto * 0.11)
+    console.log(salarioBase)
+} else if (salarioBruto > 5189.82){
+    salarioBase = salarioBruto - 570.88
+    console.log(salarioBase)
+} else {
     console.log("Salário não identificado")
+}
+
+if(salarioBase <= 1903.98 && salarioBase > 0){
+    salarioLiquido = salarioBase;
+    console.log(salarioLiquido);
+} else if (salarioBase > 1903.98 && salarioBase <= 2826.66){
+    salarioLiquido = salarioBase - ((salarioBase * 0.075) - 142.80);
+    console.log(salarioLiquido);
+} else if (salarioBase > 2826.66 && salarioBase <= 3751.05){
+    salarioLiquido = salarioBase - ((salarioBase * 0.15) - 354.80);
+    console.log(salarioLiquido);
+} else if (salarioBase > 3751.05 && salarioBase <= 4664.68){
+    salarioLiquido = salarioBase - ((salarioBase * 0.225) - 636.13);
+    console.log(salarioLiquido);
+} else{
+    salarioLiquido = salarioBase - ((salarioBase * 0.275) - 869.36);
+    console.log(salarioLiquido);
 }
