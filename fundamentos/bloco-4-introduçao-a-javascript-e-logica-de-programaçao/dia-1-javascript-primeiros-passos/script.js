@@ -185,15 +185,17 @@ if(valorDeVenda > 0 || custoProduto > 0){
 // Fazendo a conta, temos: (7,5% de R$ 2.670,00) - R$ 142,80 = R$ 57,45
 // O último cálculo para conseguir o salário líquido é R$ 2.670,00 - R$ 57,45 (salário-base - valor IR) = R$ 2.612,55.
 // Resultado: R$ 2.612,55.
-// Dica: que tal identificar as alíquotas com variáveis de nomes explicativos? 
+// Dica: que tal identificar as alíquotas com variáveis de nomes explicativos?
 
-const salarioBruto;
-const valorDescontoINSS;
-const valorDescontoIR;
-const salarioBase;
-const salarioLiquido;
+const salarioBruto = 3.000;
+const salarioBase = "";
 
-switch(salarioLiquido){
-    case (salarioBruto <= 1.556,94):
-        console.log(valorDescontoINSS)
+if (salarioBruto <= 1.556,94){
+    console.log(salarioBase + (salarioBruto * 0,08))
+}else if (salarioBruto > 1.556,94 && salarioBruto <= 2.594,92){
+    console.log(salarioBase + (salarioBruto * 0,09))
+}else if (salarioBruto > 2.594,92 && salarioBruto <= 5.189,82){
+    console.log(salarioBase + (salarioBruto * 0,11))
+}else if (salarioBruto > 5.189,82){
+    console.log(salarioBase + (salarioBruto - 570,88))
 }
