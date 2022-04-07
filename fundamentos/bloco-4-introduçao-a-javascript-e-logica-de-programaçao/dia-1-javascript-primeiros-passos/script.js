@@ -134,12 +134,12 @@ if(number1 % 2 == 0 || number2 % 2 == 0 || number3 % 2 == 0){
 // .Bonus: use somente um if 
 
 const number1 = 10;
-const number2 = 50;
+const number2 = 55;
 const number3 = 2;
 
 if(number1 % 2 == 1 || number2 % 2 == 1 || number3 % 2 == 1){
     console.log("true")
-}else{const valorImposto = 0.2;
+}else{
     console.log("false")
 }
 
@@ -187,8 +187,8 @@ if(valorDeVenda > 0 || custoProduto > 0){
 // Resultado: R$ 2.612,55.
 // Dica: que tal identificar as alíquotas com variáveis de nomes explicativos?
 
-const salarioBruto = 3.000;
-const salarioBase = "";
+const salarioBruto = 4.000;
+let salarioBase = "";
 
 if (salarioBruto <= 1.556,94){
     console.log(salarioBase + (salarioBruto * 0,08))
@@ -198,4 +198,6 @@ if (salarioBruto <= 1.556,94){
     console.log(salarioBase + (salarioBruto * 0,11))
 }else if (salarioBruto > 5.189,82){
     console.log(salarioBase + (salarioBruto - 570,88))
+}else{
+    console.log("Salário não identificado")
 }
