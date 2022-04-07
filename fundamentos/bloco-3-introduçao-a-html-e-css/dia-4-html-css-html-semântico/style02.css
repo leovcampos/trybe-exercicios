@@ -5,7 +5,11 @@
 
 th, td{
     padding: 10px;
-    border: 1px solid black;
+    border: 2px solid black;
+}
+
+p{
+    padding: 10px 0px 0px 0px;
 }
 
 img{
@@ -15,19 +19,26 @@ img{
 
 #header{
     background-image: linear-gradient(to top, greenyellow, rgb(250, 250, 250));
-    padding: 15px 15px 30px 15px;
+    padding: 15px 15px 15px 15px;
     width: 90%;
+    height: 100px;
     margin: auto;
     border-radius: 8px;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
 #header-title{
+    background-color: rgba(194, 197, 20, 0.281);
     text-align: center;
-    font-size: 90px;
-    padding: 5px;
-    height: 150px;
+    font-size: 30px;
+    padding: 5px 0px 10px 0px;
+    height: 30px;
+    width: 1200px;
+    margin-left: 10px;
+    border-radius: 5px;
     font-weight: lighter;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
 #menu{
@@ -35,14 +46,17 @@ img{
 }
 
 .botton-menu{
+    font-size: 17px;
+    position: relative;
+    top: -70px;
     text-decoration: none;
     background-color: rgb(5, 58, 5);
     color: white;
     font-weight: bolder;
     padding: 10px;
     border-radius: 5px;
-    margin-left: 10px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    margin-left: 5px;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
 }
 
 hr{
@@ -68,7 +82,99 @@ hr{
     border-radius: 8px;
 }
 
-#article{
-    border: 1px solid red;
+.subtitle{
     text-align: center;
+    background-color: rgba(194, 197, 20, 0.5);
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 40px;
+    padding: 5px 0px 0px 0px;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+.section{
+    display: block;
+    padding: 10px;
+}
+
+div{
+    position: relative;
+    text-align: justify;
+    padding: 20px;
+    left: 0px;
+    width: 500px;
+}
+
+table{
+    position: relative;
+    left: 15px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+#first-image{
+    width: 150px;
+    height: 130px;
+    position: relative;
+    left: 540px;
+    bottom: 230px;
+    border: 2px solid rgba(0, 0, 0, 0.747);
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+#second-image{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    left: 600px;
+    bottom: 290px;
+    border: 2px solid rgba(0, 0, 0, 0.747);
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+#third-image{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    left: 600px;
+    bottom: 160px;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+ul{
+    padding: 10px;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+ul li a{
+    text-decoration: none;
+    background-color: rgba(172, 255, 47, 0.212);
+}
+
+ul li a:hover{
+    text-decoration: underline;
+    color: rgb(14, 110, 110);
+}
+
+aside{
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.247);
+    padding: 5px 5px 5px 0px;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 400px;
+    height: 294px;
+    top: 250px;
+    right: 100px;
+    box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(192, 188, 188);
+    padding: 5px;
 }
