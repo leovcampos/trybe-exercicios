@@ -170,9 +170,148 @@ if(valorDeVenda > 0 || custoProduto > 0){
 // Salário bruto acima de R$ 5.189,82: alíquota máxima de R$ 570,88
 // IR (Imposto de Renda)
 // Até R$ 1.903,98: isento de imposto de renda
-// De R$ 1.903,99 a 2.826,65: alíquota de 7,5% e parcela de R$ 142,80 a deduzir do imposto
-// De R$ 2.826,66 a R$ 3.751,05: alíquota de 15% e parcela de R$ 354,80 a deduzir do imposto
-// De R$ 3.751,06 a R$ 4.664,68: alíquota de 22,5% e parcela de R$ 636,13 a deduzir do imposto
+// De R$ 1.903,99 a 2.826,65: alíquota de 7,5% econst salarioBruto = 1000;
+let salarioBase;
+let salarioLiquido;
+
+
+if (salarioBruto <= 1556.94 && salarioBruto > 0){
+    salarioBase = salarioBruto  - (salarioBruto * 0.08)
+    console.log(salarioBase)
+} else if (salarioBruto > 1556.94 && salarioBruto <= 2594.92){
+    salarioBase = salarioBruto - (salarioBruto * 0.09)
+    console.log(salarioBase)
+} else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82){
+    salarioBase = salarioBruto - (salarioBruto * 0.11)
+    console.log(salarioBase)const salarioBruto = 1000;
+    let salarioBase;
+    let salarioLiquido;
+    
+    
+    if (salarioBruto <= 1556.94 && salarioBruto > 0){
+        salarioBase = salarioBruto  - (salarioBruconst salarioBruto = 1000;
+            let salarioBase;
+            let salarioLiquido;
+            
+            
+            if (salarioBruto <= 1556.94 && salarioBruto > 0){
+                salarioBase = salarioBruto  - (salarioBruto * 0.08)
+                console.log(salarioBase)
+            } else if (salarioBruto > 1556.94 && salarioBruto <= 2594.92){
+                salarioBase = salarioBruto - (salarioBruto * 0.09)
+                console.log(salarioBase)
+            } else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82){
+                salarioBase = salarioBruto - (salarioBruto * 0.11)
+                console.log(salarioBase)
+            } else if (salarioBruto > 5189.82){
+                salarioBase = salarioBruto - 570.88
+                console.log(salarioBase)
+            } else {
+                console.log("Salário não identificado")
+            }
+            
+            if(salarioBase <= 1903.98 && salarioBase > 0){
+                salarioLiquido = salarioBase;
+                console.log(salarioLiquido);
+            } else if (salarioBase > 1903.98 && salarioBase <= 2826.66){
+                salarioLiquido = salarioBase - ((salarioBase * 0.075) - 142.80);
+                console.log(salarioLiquido);
+            } else if (salarioBase > 2826.66 && salarioBase <= 3751.05){
+                salarioLiquido = salarioBase - ((salarioBase * 0.15) - 354.80);
+                console.log(salarioLiquido);
+            } else if (salarioBase > 3751.05 && salarioBase <= 4664.68){
+                salarioLiquido = salarioBase - ((salarioBase * 0.225) - 636.13);
+                console.log(salarioLiquido);
+            } else{
+                salarioLiquido = salarioBase - ((salarioBase * 0.275) - 869.36);
+                console.log(salarioLiquido);
+            }const salarioBruto = 1000;
+            let salarioBase;
+            let salarioLiquido;
+            
+            
+            if (salarioBruto <= 1556.94 && salarioBruto > 0){
+                salarioBase = salarioBruto  - (salarioBruto * 0.08)
+                console.log(salarioBase)
+            } else if (salarioBruto > 1556.94 && salarioBruto <= 2594.92){
+                salarioBase = salarioBruto - (salarioBruto * 0.09)
+                console.log(salarioBase)
+            } else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82){
+                salarioBase = salarioBruto - (salarioBruto * 0.11)
+                console.log(salarioBase)
+            } else if (salarioBruto > 5189.82){
+                salarioBase = salarioBruto - 570.88
+                console.log(salarioBase)
+            } else {
+                console.log("Salário não identificado")
+            }
+            
+            if(salarioBase <= 1903.98 && salarioBase > 0){
+                salarioLiquido = salarioBase;
+                console.log(salarioLiquido);
+            } else if (salarioBase > 1903.98 && salarioBase <= 2826.66){
+                salarioLiquido = salarioBase - ((salarioBase * 0.075) - 142.80);
+                console.log(salarioLiquido);
+            } else if (salarioBase > 2826.66 && salarioBase <= 3751.05){
+                salarioLiquido = salarioBase - ((salarioBase * 0.15) - 354.80);
+                console.log(salarioLiquido);
+            } else if (salarioBase > 3751.05 && salarioBase <= 4664.68){
+                salarioLiquido = salarioBase - ((salarioBase * 0.225) - 636.13);
+                console.log(salarioLiquido);
+            } else{
+                salarioLiquido = salarioBase - ((salarioBase * 0.275) - 869.36);
+                console.log(salarioLiquido);
+            }ruto <= 2594.92){
+        salarioBase = salarioBruto - (salarioBruto * 0.09)
+        console.log(salarioBase)
+    } else if (salarioBruto > 2594.92 && salarioBruto <= 5189.82){
+        salarioBase = salarioBruto - (salarioBruto * 0.11)
+        console.log(salarioBase)
+    } else if (salarioBruto > 5189.82){
+        salarioBase = salarioBruto - 570.88
+        console.log(salarioBase)
+    } else {
+        console.log("Salário não identificado")
+    }
+    
+    if(salarioBase <= 1903.98 && salarioBase > 0){
+        salarioLiquido = salarioBase;
+        console.log(salarioLiquido);
+    } else if (salarioBase > 1903.98 && salarioBase <= 2826.66){
+        salarioLiquido = salarioBase - ((salarioBase * 0.075) - 142.80);
+        console.log(salarioLiquido);
+    } else if (salarioBase > 2826.66 && salarioBase <= 3751.05){
+        salarioLiquido = salarioBase - ((salarioBase * 0.15) - 354.80);
+        console.log(salarioLiquido);
+    } else if (salarioBase > 3751.05 && salarioBase <= 4664.68){
+        salarioLiquido = salarioBase - ((salarioBase * 0.225) - 636.13);
+        console.log(salarioLiquido);
+    } else{
+        salarioLiquido = salarioBase - ((salarioBase * 0.275) - 869.36);
+        console.log(salarioLiquido);
+    }
+    salarioBase = salarioBruto - 570.88
+    console.log(salarioBase)
+} else {
+    console.log("Salário não identificado")
+}
+
+if(salarioBase <= 1903.98 && salarioBase > 0){
+    salarioLiquido = salarioBase;
+    console.log(salarioLiquido);
+} else if (salarioBase > 1903.98 && salarioBase <= 2826.66){
+    salarioLiquido = salarioBase - ((salarioBase * 0.075) - 142.80);
+    console.log(salarioLiquido);
+} else if (salarioBase > 2826.66 && salarioBase <= 3751.05){
+    salarioLiquido = salarioBase - ((salarioBase * 0.15) - 354.80);
+    console.log(salarioLiquido);
+} else if (salarioBase > 3751.05 && salarioBase <= 4664.68){
+    salarioLiquido = salarioBase - ((salarioBase * 0.225) - 636.13);
+    console.log(salarioLiquido);
+} else{
+    salarioLiquido = salarioBase - ((salarioBase * 0.275) - 869.36);
+    console.log(salarioLiquido);
+}5% e parcela de R$ 636,13 a deduzir do imposto
 // Acima de R$ 4.664,68: alíquota de 27,5% e parcela de R$ 869,36 a deduzir do imposto.
 
 // Exemplo : Uma pessoa possui o salário bruto de R$ 3.000,00. O cálculo será:
