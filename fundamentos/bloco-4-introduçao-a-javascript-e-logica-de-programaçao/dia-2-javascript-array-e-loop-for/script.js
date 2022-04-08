@@ -9,17 +9,17 @@
 8. Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
 9. Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.*/
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/*let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let soma = 0;
 
-/*console.log(numbers);
+console.log(numbers);
 
 for(let a = 0; a < numbers.length; a += 1){
     soma += numbers[a];
 }
 console.log(soma);
 
-/*let media = 0;
+let media = 0;
 
 for(let m = 0; m < numbers.length; m += 1){
     media = (soma += numbers[m]) / numbers.length
@@ -39,7 +39,7 @@ for(let ma = 0; ma < numbers.length; ma += 1){
         maior = numbers[ma]
     }
 }
-console.log(maior)*/
+console.log(maior)
 
 let impares = 0;
 
@@ -50,4 +50,4 @@ for (let im = 0; im < numbers.length; im += 1){
         console.log("nenhum valor ímpar encontrado")
     }
 }
-console.log(impares)
+console.log(impares)*/
