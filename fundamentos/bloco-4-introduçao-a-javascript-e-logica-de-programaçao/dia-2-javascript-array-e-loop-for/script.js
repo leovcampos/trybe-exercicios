@@ -46,8 +46,12 @@ let impares = 0;
 for (let im = 0; im < numbers.length; im += 1){
     if(numbers[im] % 2 === 1){
         impares += 1
-    }else if(impares === 0){
-        console.log("nenhum valor ímpar encontrado")
     }
 }
-console.log(impares)*/
+
+if(impares > 0){
+    console.log(impares)
+}else{
+    console.log("nenhum valor ímpar encontrado")
+}*/
+
