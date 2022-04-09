@@ -9,10 +9,10 @@
 8. Utilizando for , crie um array que vá de 1 até 25 e imprima o resultado;
 9. Utilizando o array criado no exercício anterior imprima o resultado da divisão de cada um dos elementos por 2.*/
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/*let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let soma = 0;
 
-/*console.log(numbers);
+console.log(numbers);
 
 for(let a = 0; a < numbers.length; a += 1){
     soma += numbers[a];
@@ -62,4 +62,18 @@ for(let me = 0; me < numbers.length; me += 1){
         menor = numbers[me]   
     }
 }
-console.log(menor);*/
+console.log(menor);
+
+let num = [];
+
+for (let index = 0; index <= 25; index += 1){
+    num.push(index);
+}
+console.log(num)
+
+let divisao = [];
+
+for (index = 0; index < num.length; index += 1){
+    divisao.push(num[index] / 2)
+}
+console.log(divisao);*/
