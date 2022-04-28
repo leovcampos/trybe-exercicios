@@ -2,20 +2,13 @@ const buttonSubmit = document.querySelector('#button-submit');
 const form = document.querySelector('#form');
 
 
-function submit(e){
-    e.preventDefault();
-}
-buttonSubmit.addEventListener('click', submit);
-
-
 function submitVerification (){    
     const checkSumit = document.querySelector('#images-agree');
     checkSumit.addEventListener('change', () => {
         if (checkSumit.checked === true){
             return buttonSubmit.disabled = false;
-        } else{
-            buttonSubmit.disabled = true;
         }
+            buttonSubmit.disabled = true;
     })
 }
 submitVerification();
