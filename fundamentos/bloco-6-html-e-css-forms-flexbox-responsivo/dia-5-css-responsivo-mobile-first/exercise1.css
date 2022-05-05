@@ -48,3 +48,25 @@
   figcaption {
     font-size: .8em;
   }
+
+@media screen and (max-width: 800px) {
+      
+    body{
+      background-color: burlywood;
+      text-align: justify;
+    }    
+
+    h1, h2{
+      text-align: center;
+    }
+
+    section{
+      display: flex;
+     }
+
+    figure{
+      flex-direction: row;
+      flex-basis: 300px;
+    }
+
+}
