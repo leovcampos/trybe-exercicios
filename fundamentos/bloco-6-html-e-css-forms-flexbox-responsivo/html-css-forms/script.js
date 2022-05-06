@@ -27,7 +27,7 @@ function lengthValidation (){
         if(email.value.length < 10 || email.value.length > 50){
             return alert('Board inválido!');
         }
-        if(textArea.value.length === '' || textArea.value.length > 500){
+        if(textArea.value.length === null || textArea.value.length > 500){
             return alert('Board inválido!');
         }
         return alert('Dados enviados com sucesso! Obrigado por participar do concurso TrybeTrip.');
