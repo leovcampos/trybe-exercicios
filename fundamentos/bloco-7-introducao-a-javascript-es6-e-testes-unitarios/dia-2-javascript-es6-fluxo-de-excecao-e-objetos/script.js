@@ -8,8 +8,10 @@
 //   }
 
 
+// Exercicios parte 1:
+
 const verifyImputs = (value1, value2) => {
-    if ((value1 === '' || value2 === '') || (!isNaN(value1) || !isNaN(value2))){
+    if ((value1 === '' || value2 === '') || (isNaN(value1) || isNaN(value2))){
         throw new Error('Digite dois números.')
     }
 }
@@ -22,10 +24,12 @@ const sum = () => {
         const result = parseInt(value1) + parseInt(value2);
         verifyImputs(value1, value2);
         p.innerText = `Resultado: ${result}`;
-        return p;
     } catch (error) {
-    p.innerHTML = error.message;
-    throw error.message;
+        p.innerHTML = error.message;
+        throw error.message;
+    } finally {
+        document.querySelector('#value1').value = '';
+        document.querySelector('#value2').value = '';
     }
 }
 
@@ -33,3 +37,5 @@ window.onload = () => {
     const button = document.getElementById('button');
     button.addEventListener('click', sum);
 }
+
+// Final exericios parte 1.
