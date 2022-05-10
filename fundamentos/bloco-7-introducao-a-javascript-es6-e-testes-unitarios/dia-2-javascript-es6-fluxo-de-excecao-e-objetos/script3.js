@@ -19,3 +19,25 @@ const lesson1 = {
   };
 
 lesson2['turno'] = 'noite';
+
+const objKeys = (obj) => Object.keys(obj);
+
+const objLength = (obj) => Object.entries(obj).length;
+
+const objValues = (obj) => Object.values(obj);
+
+const allLessons = {
+  lesson1: Object.assign(lesson1),
+  lesson2: Object.assign(lesson2),
+  lesson3: Object.assign(lesson3)
+}
+
+const totalStudents = Object.values(allLessons).reduce((accumulator, key) => {
+  return accumulator + key.numeroEstudantes;
+}, 0)
+
+const indexValue = (obj, ind) => Object.values(obj).filter((value, index) => {
+  return ind == index;
+});
+
+const verifyItem = (obj, key, value) => obj[key] === value;
