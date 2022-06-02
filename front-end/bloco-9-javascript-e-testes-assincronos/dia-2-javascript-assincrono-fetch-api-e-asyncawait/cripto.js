@@ -12,11 +12,9 @@ const criptoList = async () => {
 }
 
 const fetchUsdCurrencies = async () => {
-    const url = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest';
-    const usdEndPoint = '/currencies/usd.min.json';
-    const urlUsd = url.concat(usdEndPoint);
+    const url = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.min.json';
 
-    const usdCurrencies = await fetch(urlUsd)
+    const usdCurrencies = await fetch(url)
     .then((response) => response.json())
     .then((data) => data.usd)
     .catch((error) => error.toString('Deu erro!'));
