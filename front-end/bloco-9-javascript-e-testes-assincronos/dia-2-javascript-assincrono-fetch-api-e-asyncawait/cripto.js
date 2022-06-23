@@ -15,7 +15,7 @@ const fetchUsdCurrencies = async () => {
     const url = 'https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/usd.min.json';
 
     const usdCurrencies = await fetch(url)
-    .then((response) => response.json())
+    .then((response) =>response.json())
     .then((data) => data.usd)
     .catch((error) => error.toString('Deu erro!'));
 
@@ -27,7 +27,7 @@ const setCoins = async () => {
     const localCoins = document.querySelector('#coins-list');
     const usdCurrencies = await fetchUsdCurrencies();
 
-    coins.filter((element, index) => index < 10)
+    coins.filter((element, index) => index < 20)
     .forEach((coin) => {
         const li = document.createElement('li');
         const price = Number(coin.priceUsd);
@@ -37,5 +37,5 @@ const setCoins = async () => {
         localCoins.appendChild(li);
     })
 }
-setCoins();
 
+setCoins();
